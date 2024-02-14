@@ -6,8 +6,10 @@ Allow Install dependencies for both backend and frontend.
 
 > npm run setup
 
-Finally.
+Finally
 
 > npm run dev
+
+After that, you will see the running port for both app.
 
 **Make sure to put your openAI API key to .env.dev**
