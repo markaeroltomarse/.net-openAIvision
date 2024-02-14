@@ -1,16 +1,10 @@
 ## Image Analyzer using OpenAI Vision API (Express and NextJS TypeScript)
 
-To setup and run the project, please follow these steps.
+**To setup and run the project, please follow these steps.**
 
-> npm install
+Allow Install dependencies for both backend and frontend.
 
-Also the frontend folder
-
-> cd frontend/
-
-Then install dependecies
-
-> yarn
+> npm run setup
 
 Finally.
 

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "concurrently \"npm install\" \"cd frontend && yarn\"",
     "dev": "concurrently \"set NODE_ENV=development&& ts-node-dev --project tsconfig.dev.json -r tsconfig-paths/register --transpile-only --respawn --exit-child src/index.ts\" \"npm run client\"",
     "client": "cd frontend/ && yarn dev"
   },
