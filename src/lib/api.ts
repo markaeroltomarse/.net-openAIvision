@@ -1,7 +1,9 @@
-import { HttpStatusCode } from 'axios';
-import { type Response } from 'express';
-import environment from './environment';
-import logger from './logger';
+import { HttpStatusCode } from "axios";
+import { type Response } from "express";
+import environment from "./environment";
+import logger from "./logger";
+
+// NOTE: Template from previos projects
 
 /**
  * `Api` Represents an abstract base class for common expressJS API operations.
@@ -22,13 +24,13 @@ abstract class Api {
     res: Response,
     data: T,
     statusCode: number = HttpStatusCode.Ok,
-    message: string = 'success'
+    message: string = "success"
   ) {
     if (!environment.isDev()) {
       logger.info(JSON.stringify(data, null, 2));
     }
 
-    console.log('statusCode', statusCode);
+    console.log("statusCode", statusCode);
     return res.status(statusCode).json({
       message,
       data,
