@@ -32,7 +32,7 @@ export default class VisionService {
           {
             role: "system",
             content:
-              content.length > 0
+              content.length > 1
                 ? "What is in these images? And can you put || as a separate answer per image?"
                 : "What is in this image?",
           },
